@@ -1,8 +1,4 @@
 
-
-Based on a UCI machine learning benchmark database named spambase where 57 features have already been extracted for each email message and all instances were labelled as “0” (normal) or “1” (spam).
-A typical scenario for machine learning is to create a learning system by training it on a given training data set. Later on the system will be applied to different test data sets.
-
 # <p align = "center"> You've Got Mail </p>
 
 ![](Images/spam_header.webp)
@@ -43,6 +39,15 @@ Email Spam Detection: https://www.kaggle.com/code/mfaisalqureshi/email-spam-dete
 Email Spam Classification: https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv
 
 SMS Spam Collection Dataset: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
+
+## Tools Used
+
+-Jupyter Notebook 
+-Google Colab
+-PySpark
+-Bootstrap
+-Flask
+
 
 
 
