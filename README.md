@@ -5,7 +5,7 @@
 
 ## Overview
 
-This collaborative project was created to assist the user in identifying which emails or texts messages they receive are spam or ham (normal). Machine learning was utilized to produce these results.
+This collaborative project was created to assist the user in identifying which emails or texts messages they receive are spam or ham (normal). Spam emails and text messages were gathered from various datasets. Machine learning was utilized to produce these results; multiple models were pre-processed, trained, and tested to uncover the model wtih the most accuracy. 
 
 ## Analysis
 
@@ -16,19 +16,23 @@ A typical scenario for machine learning is to create a learning system by traini
 
 ### Machine Learning Models
 
-<h5>Logisitc Regression Model</h5>
+<h5>Logisitc Regression Model (Email Spam Detection)</h5> 
+<h6>Using supervised machine learning, this model attempts to distinguish between spam or ham based on class values. <h6>
 
 ![](Images/logisitc_regression_model_results.png)
 
-<h5> Random Forest Classifier</h5>
+<h5> Random Forest Classifier (Email Spam Detection)</h5>
+<h6>This model determined predictive accuracy by averaging descision tree classifiers from the entire dataset <h6>
 
 ![](Images/rfm_model_results.png)
 
-<h5>Sequential Model #1</h5>
+<h5>Sequential Model /#1 (Email Spam Detection)<h5>
+<h6>This sequential model used two hidden layers, trained using 50 epochs, and had a total of 701 parameters. <h6>
 
 ![](Images/sequential_1.png)
 
-<h5>Sequential Model #2</h5>
+<h5>Sequential Model #2 (Email Spam Detection)</h5>
+<h6>This sequential model used two hidden layers, trained using 50 epochs, and had a total of 1,601 parameters. <h6>
 
 ![](Images/sequential_2.png)
 
