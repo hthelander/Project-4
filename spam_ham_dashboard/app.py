@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-<<<<<<< HEAD
+
 from tensorflow import keras
 from cleandata import preprocess
 
@@ -27,47 +27,21 @@ def classify():
             classification = 'Spam'
         else:
             classification = 'Ham'
-        # result1 = {
-        #     "classification": "SPAM",
-        #     "acc": 90,
-        #     "NAme": "NN"
-        # }               
+             
         
         return render_template("index.html", result={
             "text": text,
             "classification": classification, 
-            # "model1": result1
-        })
-=======
+           
 
 app = Flask(__name__)
 
-# model1 = keras.loads("model1.h5") X no of models you have
->>>>>>> d3c9ea1616f69d87902b99b3fac0502109dd7154
 
 @app.route("/")
 def index():
     return render_template("index.html", result={})
         
-<<<<<<< HEAD
 
-   
-=======
-@app.route("/api/classify/<message>")
-def classify(message=None):  
-    
-    print("========== /api/classify =========")
-    print(message)
-    print("==================================")
-        
-    if message == "hello":
-        result = "SPAM" 
-    else:
-       result = "HAM" 
-             
-    return ({"result": result})
- 
->>>>>>> d3c9ea1616f69d87902b99b3fac0502109dd7154
 
 if __name__ == '__main__':
    app.run(debug = True)
