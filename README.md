@@ -9,9 +9,8 @@ This collaborative project was created to assist the user in identifying which e
 
 ## Analysis
 
-Data was collected from multiple data sets to identify which messages were labeled as spam or ham. The data was then pre-processed, filtered, and trained using multiple machine learning models. Furthermore, word-count and frequency of specific words within a message were analyzed to determine if these factors had an effect on determining if the message was spam or ham.
+Data was collected from multiple data sets to identify which messages were labeled as spam or ham. The data was then pre-processed, filtered, and trained using multiple machine learning models. Furthermore, word-count and frequency of specific words within a message were analyzed to determine if these factors had an effect on determining if the message was spam or ham, based on a UCI machine learning benchmark database named spambase where 57 features have already been extracted for each email message and all instances were labelled as “0” (normal) or “1” (spam).
 
-Based on a UCI machine learning benchmark database named spambase where 57 features have already been extracted for each email message and all instances were labelled as “0” (normal) or “1” (spam).
 A typical scenario for machine learning is to create a learning system by training it on a given training data set. Later on the system will be applied to different test data sets. Various machine learning models were used to uncover the most useful model. 
 
 ### Machine Learning Models
@@ -36,6 +35,11 @@ A typical scenario for machine learning is to create a learning system by traini
 <h6>This sequential model used two hidden layers, trained using 50 epochs, and had a total of 1,601 parameters. <h6>
 
 ![](Images/sequential_2.png)
+
+<h5>Sequential Model #3 (Email Spam Detection)</h5>
+<h6>This sequential model used scikit_learn's countVectorizer transform a list of messages to trainable features. It used 3 hidden layers, trained using 50 epochs, and had a total of 280,401 parameters. <h6>
+
+![](Images/nn_model_hannah.png)
 
 <h5>Naive Bayes</h5>
 <h6>This model used the Bayes Theorem and tokenization to classify email/text as spam or not. <h6>
