@@ -32,15 +32,17 @@ def classify():
             "response": response
             })
     
-# @app.route("/")
-# def index():
-#     return render_template("index.html", result = {}
-#     )
-
-@app.route("/")
+@app.route("/spam/")
 def spam_detector():
     return render_template("spam.html", result = {}
     )
+
+@app.route("/")
+def index():
+    return render_template("index.html", result = {}
+    )
+
+
            
 
 
